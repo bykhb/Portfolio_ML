@@ -9,9 +9,9 @@ Portfolio
  <p>통폐합지점 이탈에 영향을 주는 변수들을 찾고, 영업 성과 관리를 위해 변수 특성이 비슷한 지점들을 클러스터링</p>
 
 - Summary
-<p> (1). Data Collection
- 
+ <p> (1). Data Collection
   - 은행 데이터 마트(지점데이터 + 고객데이터) + 외부데이터(금융결제원)</p>
+  
 <p>&nbsp;&nbsp;(2). Data Preprocessing <br/>
          - EDA (지점데이터 + 고객데이터 + 외부데이터) <br/>
          - Reduction (특성이 다른 지점 데이터  제거, missing value 포함한 고객데이터 제거)</p>
