@@ -707,3 +707,66 @@ aa<--plot3d(pca_res$x[,1:3], col=clust3)
 rgl.postscript('aa.ps','ps')
 
 
+
+
+
+######외부데이터 API #######
+key_place = 'AIzaSyCeejsCD2Bh0_2loHupYNuADI6eeWIFhlc'
+
+install.packages('googleway')
+library(googleway)
+
+loc <- fread('loc.csv')
+loc <- read.csv('loc.csv',header = TRUE)
+
+latitude <- list(loc[,2])
+longitude <- list(loc[,3])
+lat <- latitude[[1]]
+long <- longitude[[1]]
+c <- data.frame()
+
+for (i in 1:136) {
+  
+  print(i)
+  b = google_places(location = c(lat[i],long[i]),
+                    place_type = "bank",
+                    # search_string = "bank,은행",
+                    radius = 300,
+                    key = key_place)
+  b_next <- google_places(location = c(lat[i],long[i]),
+                          place_type = "bank",
+                          #search_string = "bank,은행",
+                          radius = 300,
+                          page_token = b$next_page_token,
+                          key = key_place)
+  
+  # b_next2 <- google_places(location = c(lat[i],long[i]),
+  #                         place_type = "bank",
+  #                         #search_string = "bank,은행",
+  #                         radius = 500,
+  #                         page_token = b_next$next_page_token,
+  #                         key = key_place)
+  if(b$status == 'INVALID_REQUEST' | b$status == 'ZERO_RESULTS')
+  {
+    next
+  }
+  c[i,1] <- length(b$results[,'name']) 
+  if(b_next$status == 'INVALID_REQUEST')
+  {
+    next
+  }
+  c[i,2] <- length(b_next$results[,'name'])
+  # c[i,3] <- length(b_next2$results[,'name']) 
+  # 
+}
+loc$삼백m <- c[,1]
+write.csv(loc,'loc.csv')
+c
+a
+b
+lat[i]
+long[i]
+
+a[i,1] <- length(b$results[,'name']) 
+a[i,2] <- length(b_next$results[,'name']) 
+length(b_next$results[,'name']) 
