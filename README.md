@@ -10,7 +10,7 @@
 <p>&nbsp;&nbsp;(1). Data Collection <br/>
          - 은행 데이터 마트(지점데이터 + 고객데이터) + 외부데이터(금융결제원)</p>
 <p>&nbsp;&nbsp;(2). Data Preprocessing <br/>
-         - EDA (지점데이터 + 고객데이터 + 외부데이터) <br/>    
+         - EDA (지점데이터 + 고객데이터 + 외부데이터) <br/>
          - Reduction (특성이 다른 지점 데이터  제거, missing value 포함한 고객데이터 제거)</p>
 <p>&nbsp;&nbsp;(3). Model & Algorithms <br/>
          - xgboost regression(지점 데이터) --> RMSE 작을 때 feature importance <br/>
