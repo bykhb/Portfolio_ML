@@ -26,7 +26,7 @@ Portfolio
 		- Futher Research : 바뀌는 금융환경 ---> 모델링 반복 필요<br/>
 		&nbsp;&nbsp;&nbsp;&nbsp; : 통폐합이 영향을 준 고객만을 대상으로 분석 모델을 구축해야 한다
 
-<pre> 보러가기:</pre> [Title](link)
+보러가기: [Title](link)
       
 ***
 <h2> #2. Project - 야구장 관객수 예측 </h2> 
