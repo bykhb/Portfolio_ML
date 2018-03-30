@@ -40,26 +40,26 @@ Portfolio_ML
 - Summary
 
 	<p>(1). Data Collection</br>
-    - 수집대상 : 오리온-포카칩 / 농심-수미칩 / 해테 - 허니버터칩 / 롯데 - 레이즈 감자칩 / PB-이마트 노브랜드 감자칩 <br/> 
-    - 수집 방법 : R을 통한 크롤링<br/>
-    - 수집 출처 : 네이버 블로그, 트위터, 페이스북</p>
+    	- 수집대상 : 오리온-포카칩 / 농심-수미칩 / 해테 - 허니버터칩 / 롯데 - 레이즈 감자칩 / PB-이마트 노브랜드 감자칩 <br/> 
+    	- 수집 방법 : R을 통한 크롤링<br/>
+    	- 수집 출처 : 네이버 블로그, 트위터, 페이스북</p>
     
 	<p>(2). Data Preprocessing <br/>
-    - 형태소 저장 <br/>
-    - 불필요한 단어 제거 </p>
+    	- 형태소 저장 <br/>
+    	- 불필요한 단어 제거 </p>
     
-  <p>(3). Model & Algorithms <br/>
-    - Wordcloud : 빈도분석의 시각화를 위해
-    - 상관관계 : network graph를 통해 시각화
-    - graphical lasso : 추가 변수의 효과를 제어하고, 두 변수간  의 효과를 알기 위해 사용 
-    - 연관규칙 : support, confidence, lift(by apriori 알고리즘)
-    - 시계열 분석 : 검색 추세 분석
+  	<p>(3). Model & Algorithms <br/>
+	- Wordcloud : 빈도분석의 시각화를 위해<br>
+    	- 상관관계 : network graph를 통해 시각화<br>
+    	- graphical lasso : 추가 변수의 효과를 제어하고, 두 변수간  의 효과를 알기 위해 사용 <br>
+    	- 연관규칙 : support, confidence, lift(by apriori 알고리즘)<br>
+    	- 시계열 분석 : 검색 추세 분석
     
-  <p>(4). Report
-    - jupyter notebook with R로 작성
+  	<p>(4). Report
+    	- jupyter notebook with R로 작성
 
-  <p>(5). Review <br/>
-    - Feedback : 크롤링, 연관규칙, 가우시안 그래프 모델 등 다양한 분석방법을 활용할 수 있어서 좋았다 <br/>
-    - Futuer Research : 코드가 깔끔하지 않고, 명확한 결론을 내리지 못했다. 감성사전을 통해 감성분석을 하는게 필요해보인다.
+  	<p>(5). Review <br/>
+    	- Feedback : 크롤링, 연관규칙, 가우시안 그래프 모델 등 다양한 분석방법을 활용할 수 있어서 좋았다 <br/>
+    	- Futuer Research : 코드가 깔끔하지 않고, 명확한 결론을 내리지 못했다. 감성사전을 통해 감성분석을 하는게 필요해보인다.
 		
 *보러가기: [감자과자시장분석](https://github.com/hbkimhbkim/Portfolio_ML/blob/master/bankchurn/)*
