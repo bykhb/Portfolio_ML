@@ -62,4 +62,4 @@ Portfolio_ML
     	- Feedback : 크롤링, 연관규칙, 가우시안 그래프 모델 등 다양한 분석방법을 활용할 수 있어서 좋았다 <br/>
     	- Futuer Research : 코드가 깔끔하지 않고, 명확한 결론을 내리지 못했다. 감성사전을 통해 감성분석을 하는게 필요해보인다.
 		
-*보러가기: [감자과자시장분석](https://github.com/hbkimhbkim/Portfolio_ML/blob/master/bankchurn/)*
+*보러가기: [감자과자시장분석](https://github.com/hbkimhbkim/Portfolio_ML/tree/master/potatosnack)*
